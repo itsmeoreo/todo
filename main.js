@@ -12,7 +12,6 @@ getTask.addEventListener('keydown', (event)=> {
 })
 
 function add_task(event) {
-  // event.preventDefault();
   console.log("Adding task...");
   var todo= document.getElementById("get-task").value;
   document.getElementById("get-task").value= "";
@@ -161,9 +160,3 @@ function checkfunc(event) {
     did.appendChild(task);
   }
 }
-
-
-
-// var ul= document.getElementById("pending-list");
-// var li= document.getElementById("asdfgh");
-// ul.removeChild(li);
