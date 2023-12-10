@@ -123,6 +123,9 @@ function editfunc(event) {
   done.addEventListener("click", donefunc);
 }
 function donefunc(event) {
+  if (document.querySelector("#done") != null) {
+    document.querySelector("#done").click();
+  }
   var doneBtn_temp= event.target;
   var div= doneBtn_temp.parentNode;
   var mainDiv = div.parentNode;
